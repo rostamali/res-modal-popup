@@ -50,6 +50,7 @@ h2.res-modal-heading {
 p#res-modal-message {
     font-size: 15px;
     font-weight: 600;
+    margin-top: 10px;
 }
 .kairos-logo img {
     height: 90px;
