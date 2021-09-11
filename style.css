@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6, p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 450px;
     padding: 20px 30px 20px 30px;
     box-shadow: 0px 10px 20px #00000069;
 
@@ -69,18 +69,26 @@ span#current-status {
 
 @media only screen and (max-width: 768px){
     .res-modal-inner{
-        width: 320px;
+        width: 420px;
+    }
+    span#current-status {
+        font-size: 16px;
+    }
+    p#res-modal-message {
+        font-size: 15px;
+        font-weight: 500;
     }
 }
 @media only screen and (max-width: 425px){
     .res-modal-inner{
-        width: 300px;
+        width: 400px;
     }
     h2.res-modal-heading {
         font-size: 16px;
     }
-    p#res-modal-message {
-        font-size: 14px;
-        font-weight: 500;
+}
+@media only screen and (max-width: 375px){
+    .res-modal-inner{
+        width: 300px;
     }
 }
