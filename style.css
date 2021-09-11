@@ -55,6 +55,13 @@ p#res-modal-message {
 .kairos-logo img {
     height: 90px;
 }
+span#current-status {
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+    color: #FFF;
+    font-size: 18px;
+}
 .background-overly{
     background-color: rgb(23 17 16 / 0.7);
 }
