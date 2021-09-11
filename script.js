@@ -5,7 +5,7 @@ const billingCountry = document.getElementById('billing_country');
 billingCountry.addEventListener('change', function(){
     console.log(billingCountry.value);
 
-    if(billingCountry.value === 'BN'){
+    if(billingCountry.value === 'CL'){
         resModalPopUp.style.display = 'none';
     }
     else{
@@ -21,7 +21,7 @@ billingCity.addEventListener('change', function(){
     const billingCountryValue = billingCity.value;
     console.log(billingCountryValue.toLowerCase());
 
-    if(billingCountryValue.toLowerCase() === 'rajshahi'){
+    if(billingCountryValue.toLowerCase() === 'santiago'){
         resModalPopUp.style.display = 'none';
     }
     else{
