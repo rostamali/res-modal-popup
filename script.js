@@ -18,10 +18,11 @@ billingCountry.addEventListener('change', function(){
 const billingCity = document.getElementById('billing_city');
 billingCity.addEventListener('change', function(){
     
-    const billingCountryValue = billingCity.value;
-    console.log(billingCountryValue.toLowerCase());
+    const billingCityValue = billingCity.value;
+    const billingCityValueLowerCase = billingCityValue.toLowerCase();
+    const billingCityValueChecker = billingCityValueLowerCase === 'santiago' || billingCityValueLowerCase === 'stgo' || billingCityValueLowerCase === 'región metropolitana' || billingCityValueLowerCase === 'región metropolitana de santiago' || billingCityValueLowerCase === 'santiago región metropolitana' || billingCityValueLowerCase === 'metropolitana';
 
-    if(billingCountryValue.toLowerCase() === 'santiago'){
+    if(billingCityValueChecker){
         resModalPopUp.style.display = 'none';
     }
     else{
@@ -34,3 +35,4 @@ function resCloseModal(){
     resModalPopUp.style.display = 'none';
 }
 document.classList.add('background-overly');
+
