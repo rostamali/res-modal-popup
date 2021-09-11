@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+.res-modal-inner{
+    background-color: #FBC057;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px 30px 20px 30px;
+    box-shadow: 0px 10px 20px #00000069;
+
+    display: none;
+}
+
+.res-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2.res-modal-heading {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.res-close-modal{
+    color: #000;
+    transition: all 0.3s;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    
+}
+.res-close-modal i{
+    font-size: 20px;
+}
+.res-close-modal:hover{
+    color: #FFF;
+}
+p#res-modal-message {
+    font-size: 15px;
+    font-weight: 600;
+}
+.kairos-logo img {
+    height: 90px;
+}
+.background-overly{
+    background-color: rgb(23 17 16 / 0.7);
+}
+/* media query */
+
+@media only screen and (max-width: 768px){
+    .res-modal-inner{
+        width: 320px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .res-modal-inner{
+        width: 300px;
+    }
+    h2.res-modal-heading {
+        font-size: 16px;
+    }
+    p#res-modal-message {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

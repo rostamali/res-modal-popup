@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal For the Country</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Vertically centered modal -->
+    <h1>Select country</h1>
+    <select name="" id="billing_country">
+        <option value="BN">Bangladesh</option>
+        <option value="CL">Chile</option>
+        <option value="USA">America</option>
+        <option value="UK">UnitedKingdom</option>
+        <option value="ARG">Argentina</option>
+    </select>
+
+    <input type="text" id="billing_city">
+
+    <div class="res-modal-section">
+        <div class="res-modal-inner" id="res-modal">
+            <div class="res-modal-header">
+                <h2 class="res-modal-heading">nótese bien</h2>
+                <span onclick="resCloseModal()" class="res-close-modal">
+                    <i class="fas fa-times"></i>
+                </span>
+            </div>
+            <div class="res-modal-body">
+                <div class="kairos-logo">
+                    <img src="https://kairos-brewing.com/wp-content/uploads/2021/06/Attachment_1624359634.png" alt="">
+                </div>
+                <p id="res-modal-message">
+                    Lamentablemente aún no podemos asegurar cervezas frescas en el país que seleccionaste. Por favor escoge otra opción.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/88857f69ea.js" crossorigin="anonymous"></script>
+    <!-- custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
